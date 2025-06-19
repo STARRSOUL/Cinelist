@@ -1,6 +1,6 @@
 import { Routes , Route } from "react-router-dom";
 import "./CSS/App.css"
-import NavBar from "./Components/Navbar";
+import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Favourite from "./Pages/Favourites";
 import {MovieProvider} from "./Contexts/movieContext"
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <MovieProvider>
-      <NavBar/>
+      <Navbar/>
     <main className="main-content">
       <Routes>
         <Route path="/" element={<Home/>}/>
